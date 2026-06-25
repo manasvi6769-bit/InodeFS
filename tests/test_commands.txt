@@ -1,0 +1,193 @@
+# UserSpaceFileSystem Test Suite
+
+#########################################
+
+# Basic Directory Operations
+
+#########################################
+
+pwd
+
+mkdir home
+
+mkdir home/docs
+
+mkdir home/images
+
+tree
+
+ls
+
+ls home
+
+cd home
+
+pwd
+
+cd docs
+
+pwd
+
+cd ..
+
+pwd
+
+cd /
+
+pwd
+
+#########################################
+
+# File Creation
+
+#########################################
+
+touch home/readme.txt
+
+touch home/docs/report.txt
+
+ls home
+
+ls home/docs
+
+#########################################
+
+# Metadata
+
+#########################################
+
+stat home/readme.txt
+
+stat home/docs/report.txt
+
+#########################################
+
+# File Writing
+
+#########################################
+
+write home/readme.txt
+
+Hello IIT Delhi
+
+cat home/readme.txt
+
+blocks
+
+#########################################
+
+# Append
+
+#########################################
+
+append home/readme.txt
+
+Operating Systems
+
+cat home/readme.txt
+
+blocks
+
+#########################################
+
+# Large File
+
+#########################################
+
+write home/docs/report.txt
+
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghij
+
+cat home/docs/report.txt
+
+stat home/docs/report.txt
+
+blocks
+
+#########################################
+
+# Remove File
+
+#########################################
+
+rm home/readme.txt
+
+ls home
+
+#########################################
+
+# Recursive Remove
+
+#########################################
+
+rm -r home/docs
+
+tree
+
+#########################################
+
+# Invalid Commands
+
+#########################################
+
+cd abc
+
+cat abc
+
+stat abc
+
+rm abc
+
+#########################################
+
+# Relative Paths
+
+#########################################
+
+mkdir test
+
+touch test/file.txt
+
+cd test
+
+pwd
+
+cat file.txt
+
+cd ..
+
+#########################################
+
+# Persistence Test
+
+#########################################
+
+mkdir persistent
+
+touch persistent/data.txt
+
+write persistent/data.txt
+
+Persistent Filesystem
+
+exit
+
+#########################################
+
+# Restart Program
+
+#########################################
+
+tree
+
+cat persistent/data.txt
+
+stat persistent/data.txt
+
+blocks
+
+#########################################
+
+# End of Test Suite
+
+#########################################
