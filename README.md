@@ -157,6 +157,12 @@ UserSpaceFileSystem/
 ├── data/
 │   └── disk.img
 │
+├── docs/
+│   └── design.md
+│
+├── tests/
+│   └── test_commands.txt
+│
 ├── README.md
 ├── compile.sh
 └── .gitignore
@@ -265,5 +271,4 @@ Restarting the program preserves the filesystem because it is restored from `dat
 # Author
 
 Manasvi
-    
 Indian Institute of Technology Delhi
