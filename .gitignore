@@ -1,0 +1,9 @@
+```text
+filesystem
+
+*.o
+
+.vscode/
+
+.DS_Store
+```
